@@ -1,0 +1,5 @@
+export ARCH=arm
+export SUBARCH=arm
+export CROSS_COMPILE=/home/android/android-ndk-r8b/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86/bin/arm-linux-androideabi-
+
+export PATH=~/bin:~/android-sdk-linux/tools:~/android-sdk-linux/platform-tools:$PATH
