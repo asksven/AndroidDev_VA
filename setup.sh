@@ -2,7 +2,7 @@
 
 # install Oracle Java 7 from PPA
 # http://www.webupd8.org/2012/01/install-oracle-java-jdk-7-in-ubuntu-via.html
-sudo add-apt-repository ppa:webupd8team/java && sudo apt-get update && sudo apt-get install oracle-java7-installer
+sudo add-apt-repository ppa:webupd8team/java && sudo apt-get update && sudo apt-get install oracle-java8-installer
 
 # install git
 sudo apt-get install git
@@ -11,36 +11,31 @@ sudo apt-get install chromium-browser
 
 # install Android Build Environment
 # http://source.android.com/source/initializing.html
-sudo apt-get install make gcc g++ gnupg flex bison gperf build-essential \
-  zip curl libc6-dev x11proto-core-dev \
-  libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386 \
-  libgl1-mesa-dev g++-multilib mingw32 tofrodos \
-  python-markdown libxml2-utils xsltproc
-sudo apt-get install libncurses5-dev:i386 zlib1g-dev:i386
-sudo ln -s /usr/lib/i386-linux-gnu/mesa/libGL.so.1 /usr/lib/i386-linux-gnu/libGL.so
+# in 4.0 no x-compiler anymore since no-one has ever used it
+#sudo apt-get install make gcc g++ gnupg flex bison gperf build-essential \
+#  zip curl libc6-dev x11proto-core-dev \
+#  libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386 \
+#  libgl1-mesa-dev g++-multilib mingw32 tofrodos \
+#  python-markdown libxml2-utils xsltproc
+#sudo apt-get install libncurses5-dev:i386 zlib1g-dev:i386
+#sudo ln -s /usr/lib/i386-linux-gnu/mesa/libGL.so.1 /usr/lib/i386-linux-gnu/libGL.so
 
 # install Toolchain
 # http://source.android.com/source/building-kernels.html
-mkdir -p ~/prebuilts/gcc/linux-x86/arm && cd ~/prebuilts/gcc/linux-x86/arm && git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6
+#mkdir -p ~/prebuilts/gcc/linux-x86/arm && cd ~/prebuilts/gcc/linux-x86/arm && git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6
 
 
 #install android studio
-wget http://dl.google.com/android/studio/install/0.4.2/android-studio-bundle-133.970939-linux.tgz
-tar zxvf android-studio-bundle-133.970939-linux.tgz
+wget https://dl.google.com/dl/android/studio/ide-zips/1.1.0/android-studio-ide-135.1740770-linux.zip
+unzip android-studio-ide-135.1740770-linux.zip
 
 # install eclipse
-##wget http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/kepler/RC2/eclipse-standard-kepler-RC2-linux-gtk-x86_64.tar.gz&mirror_id=580
-wget http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/kepler/SR2/eclipse-standard-kepler-SR2-linux-gtk-x86_64.tar.gz&mirror_id=17
-# tar zxvf eclipse-standard-kepler-RC2-linux-gtk-x86_64.tar.gz
-tar zxvf eclipse-standard-kepler-SR2-linux-gtk-x86_64.tar.gz
+wget http://mirror.netcologne.de/eclipse//technology/epp/downloads/release/luna/SR2/eclipse-java-luna-SR2-linux-gtk-x86_64.tar.gz 
+tar zxvf eclipse-java-luna-SR2-linux-gtk-x86_64.tar.gz
 
 # install android sdk
-wget http://dl.google.com/android/android-sdk_r22.3-linux.tgz
-tar zxvf android-sdk_r22.3-linux.tgz
-
-
-# Install svn
-sudo apt-get install subversion
+wget http://dl.google.com/android/android-sdk_r24.1.2-linux.tgz
+tar zxvf android-sdk_r24.1.2-linux.tgz
 
 # install adb
 sudo apt-get install android-tools-adb
