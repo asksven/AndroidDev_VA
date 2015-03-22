@@ -46,10 +46,10 @@ echo 2. Launch eclipse
 echo 3. Update eclipse
 echo 4. Install ADT Plugin: http://developer.android.com/sdk/installing/installing-adt.html
 echo 5. Launch ADT and update android SDK and tools
-echo 6. Go to eclipse marketplace and install mylyn and mylyn github connector
+echo 6. Go to eclipse marketplace and install mylyn github connector
 echo .
-echo 7 setup your android build environment
-echo 8 see http://source.android.com/source/initializing.html
+#echo 7 setup your android build environment
+#echo 8 see http://source.android.com/source/initializing.html
 
 # Update mint
 sudo apt-get update && sudo apt-get upgrade
