@@ -1,4 +1,4 @@
 AndroidDev_VA
 =============
 
-Android Dev virtual appliance
+A generic Dev virtual appliance, for Android, Node and Azure
