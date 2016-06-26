@@ -22,6 +22,8 @@ curl -fsSL https://get.docker.com/ | sh
 #install android studio
 sudo apt-get install --assume-yes ia32-libs && sudo apt-add-repository -y ppa:paolorotolo/android-studio && sudo apt-get update && sudo apt-get --assume-yes install android-studio
 
+echo "PATH=\"$HOME/Android/Sdk/platform-tools:$PATH\"" >> .bashrc
+
 
 # install adb
 # sudo apt-get install -y android-tools-adb
