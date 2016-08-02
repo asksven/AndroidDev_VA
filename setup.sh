@@ -11,6 +11,10 @@ sudo npm install -g cordova
 
 sudo npm install -g ionic
 
+# stuff for ionic 2
+npm install -g ionic@beta
+npm install typings -g
+
 
 # install atom
 sudo add-apt-repository -y ppa:webupd8team/atom && sudo apt-get update && sudo apt-get --assume-yes install atom
