@@ -3,17 +3,20 @@
 # install open-jdk
 sudo apt-get install --assume-yes openjdk-7-jdk git chromium-browser curl
 
+# install oracle jdk-8
+sudo apt-add-repository -y ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install --assume-yes oracle-java8-installer
 
-curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash - && sudo apt-get install --assume-yes nodejs && sudo apt-get install --assume-yes npm build-essential
-
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash - && sudo apt-get install --assume-yes nodejs && sudo apt-get install --assume-yes npm build-essential
 
 sudo npm install -g cordova
 
 sudo npm install -g ionic
 
 # stuff for ionic 2
-npm install -g ionic@beta
-npm install typings -g
+#npm install -g ionic@beta
+#npm install typings -g
 
 
 # install atom
