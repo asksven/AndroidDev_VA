@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install open-jdk
-sudo apt-get install --assume-yes openjdk-7-jdk git chromium-browser curl
+sudo apt-get install --assume-yes openjdk-7-jdk git chromium-browser curl open-vm-tools
 
 # install oracle jdk-8
 sudo apt-add-repository -y ppa:webupd8team/java
