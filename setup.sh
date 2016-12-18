@@ -6,7 +6,7 @@ sudo apt-get install --assume-yes openjdk-7-jdk git chromium-browser curl open-v
 # install oracle jdk-8
 sudo apt-add-repository -y ppa:webupd8team/java
 sudo apt-get update
-sudo apt-get install --assume-yes oracle-java8-installer
+sudo apt-get install --assume-yes oracle-java8-installer oracle-java8-set-default
 
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash - && sudo apt-get install --assume-yes nodejs && sudo apt-get install --assume-yes npm build-essential
 
